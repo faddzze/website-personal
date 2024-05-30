@@ -3,136 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumah Progamming</title>
+    <title>Kalkulator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href=''>KelasProgramming.</a></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#tutors">Tutors</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href=""class="tbl-biru">Sign Up</a></li>
-                </ul>
+    
+<div class="container">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display">
             </div>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <!-- untuk home -->
-        <section id="home">
-            <img src="https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2284.jpg?t=st=1715952830~exp=1715956430~hmac=c972a5f38a7393d3e8d9775c6b0ecd2201ea34455d186f46cce92b3deb1f7d09&w=740"/>
-            <div class="kolom">
-                <p class="deskripsi">Belajar Progamming Dirumah Aja</p>
-                <h2>Tetap sehat, Tetap Semangat</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo obcaecati assumenda quos, numquam magni.</p>
-                <p><a href=""class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+            <div>
+                <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                <input type="button" value="DE" onclick="display.value = display.value.toString(),slice (0,-1)" class="operator"> 
+                <input type="button" value="." onclick="display.value += '.' " class="operator">
+                <input type="button" value="/" onclick="display.value += '/' " class="operator">
             </div>
-        </section>
-
-        <!--untuk courses -->
-        <section id="courses">
-            <div class="kolom">
-                <p class="deskripsi">You Will Need This</p>
-                <h2>Online Courses</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sapiente dolorem tenetur, repellat nesciunt dicta similique. Saepe odio voluptas ratione?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sapiente dolorem tenetur, repellat nesciunt dicta similique. Saepe odio voluptas ratione?</p>
-                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            <div>
+                <input type="button" value="7" onclick="display.value += '7' ">
+                <input type="button" value="8" onclick="display.value += '8' ">
+                <input type="button" value="9" onclick="display.value += '9' ">
+                <input type="button" value="*" onclick="display.value += '*' "  class="operator">
             </div>
-            <img src="https://img.freepik.com/free-photo/student-class-taking-notes_23-2148888811.jpg?t=st=1715960427~exp=1715964027~hmac=7014dc27ee94b6500ba45d6f386d3b7f973f7f3907905a52985eef84eb7ddcd0&w=360"/>
-        </section>
-        
-        <!-- untuk tutors-->
-        <section id="tutors">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi">Our Top Tutors</p>
-                    <h2>Tutors</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, alias?</P>
-                </div>
-
-                <div class="tutor-list">
-                    <div class="kartu-tutor">
-                        <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"/>
-                        <p>Jason Ambatukam</p>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src="https://www.wikihow.com/images/thumb/9/90/What_type_of_person_are_you_quiz_pic.png/1200px-What_type_of_person_are_you_quiz_pic.png"/>
-                        <p>Liam Payne</p>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"/>
-                        <p>Sabrina Carpenter</p>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src="https://www.shutterstock.com/image-photo/portrait-attractive-cheerful-skilled-girl-600nw-2091362674.jpg"/>
-                        <p>Alesso</p>
-                    </div>
-                </div>
+            <div>
+                <input type="button" value="4" onclick="display.value += '4' ">
+                <input type="button" value="5" onclick="display.value += '5' ">
+                <input type="button" value="6" onclick="display.value += '6' ">
+                <input type="button" value="-" onclick="display.value += '-' "  class="operator">
             </div>
-        </section>
-
-        <!-- untuk partners -->
-        <section id="partners">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi">Our Top Parters</p>
-                    <h2>partners</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum non ea cupiditate incidunt quod doloribus omnis ipsum impedit asperiores.</p>
-                </div>
-
-                <div class="partner-list">
-                    <div class="kartu-partner">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYx1XrPOCG6QRsj_9H4CLHPR0zyX_M4QHqOpJkNUv0w&s"/>
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="https://marketplace.canva.com/EAFMljXC558/1/0/1600w/canva-blue-gold-elegant-clean-badge-university-logo-gAsDf5t6ewg.jpg"/>
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="https://media.istockphoto.com/id/1475335566/vector/university-logo-design-vector.jpg?s=612x612&w=0&k=20&c=38yhifr8INb_gaS4C7WJ783XhJoK4YnnInwsmskH1ww="/>
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="https://www.thelogoboutique.com/wp-content/uploads/2021/01/education-logo-design-campus.jpg"/>
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS916l9rtXqP4IVonwz-UCsAJGfX2BeBAmCIjwXJzljMg&s"/>
-                    </div>
-                </div>
+            <div>
+                <input type="button" value="1" onclick="display.value += '1' ">
+                <input type="button" value="2" onclick="display.value += '2' ">
+                <input type="button" value="3" onclick="display.value += '3' ">
+                <input type="button" value="+" onclick="display.value += '+' "  class="operator">
             </div>
-        </section>
+            <div>
+                <input type="button" value="00" onclick="display.value += '00' ">
+                <input type="button" value="0" onclick="display.value += '0' ">
+                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal"  class="operator">
+                
+            </div>
+        </form>
     </div>
+</div>
 
-    <div id="contact">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="footer-section">
-                    <h3>Kelas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?</p>
-                </div>
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae?</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae non incidunt labore accusamus sit saepe!</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social</h3>
-                    <p><b>instagram: </b>@faddzze</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="copyright">
-        <div class="wrapper">
-            &copy;2023. <b>KelasProgramming.</b> All Right Reserved
-        </div>
-    </div>
 </body>
 </html>
